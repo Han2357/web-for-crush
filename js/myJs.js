@@ -14,8 +14,13 @@ function firstQuestion(){
     
     $('.content').hide();
     Swal.fire({
-        title: 'He luu cậu!',
-        text: 'Tớ có điều này muốn hỏi cậu nhớ phải trả lời thật lòng nhaaa.',
+        title: 'Helloooo',
+        text: 'Mới đây mà tui crush mấy người được 5 năm rồi đó',
+        text: 'Không biết bị bỏ bùa hay sao nhưng mà hàm số tình yêu này là đồng biến, có tăng không giảm', 
+        text: 'Bây giờ chỉ khác lúc trước ở 1 điểm',
+        text: 'Đó là thay vì mong muốn chiếm hữu, tui chỉ muốn được góp mặt trong cuộc sống của mấy người thôi',
+        text: 'Với vai trò gì cũng được, miễn mấy người vui là tui vui theo rồi'
+        text: 'Tui có 1 câu hỏi, phải trả lời thật lòng đó nha',
         imageUrl: 'img/cuteCat.jpg',
         imageWidth: 300,
         imageHeight: 300,
@@ -96,11 +101,11 @@ $('#yes').click(function() {
     var audio = new Audio('sound/tick.mp3');
     audio.play();
     Swal.fire({
-        title: 'Nói cho tớ lí do cậu thích tớ đi :vvvv',
+        title: 'Muốn biết lí do tui thích mấy người thì gõ phím bất kì đi',
         html: true,
         width: 900,
         padding: '3em',
-        html: "<input type='text' class='form-control' id='txtReason' onmousemove=textGenerate()  placeholder='Whyyy'>",
+        html: "<input type='text' class='form-control' id='txtReason' onmousemove=textGenerate()  placeholder='Why?'>",
         background: '#fff url("img/iput-bg.jpg")',
         backdrop: `
               rgba(0,0,123,0.4)
@@ -109,23 +114,21 @@ $('#yes').click(function() {
               no-repeat
             `,
         showCancelButton: true,
-        cancelButtonText: "Thôi ngại lém :<<",
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
         confirmButtonColor: '#fe8a71',
         cancelButtonColor: '#f6cd61',
-        confirmButtonText: 'Gửi cho tớ <3'
+        confirmButtonText: 'Vậy đó hả'
     }).then((result) => {
         if (result.value) {
             Swal.fire({
                 width: 900,
                 confirmButtonText: 'Okiiiii lun <3',
                 background: '#fff url("img/iput-bg.jpg")',
-                title: 'Tớ biết mà ^^ Yêu cậu 300.000',
-                text: "Tối nay tớ qua đón cậu đi chơi nhaaaaaaaaa :v Còn giờ thì chờ gì nữa mà ko inbox cho tớ đi nàoooooo",
+                title: 'Ò vậy đó',
+                text: "If Anything Happens, I Love You <3",
+                text: "Rồi giờ chần chờ gì nữa mà không inbox cho tui"
                 confirmButtonColor: '#83d0c9',
                 onClose: () => {
-                    window.location = 'http://fb.com';
+                    window.location = 'http://zalo.me/0939365890';
                   }
             })
         }
